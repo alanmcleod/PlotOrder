@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#a44d32">
+  <title>Plot Order</title>
+  <meta name="description" content="Arrange plot points and notes for your books.">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <img src="icons/icon.svg" alt="" class="logo">
+    <div class="brand"><strong>Plot Order</strong><span>Your story, in the right order.</span></div>
+    <span class="saved"><i></i> Saved</span>
+  </header>
+  <main class="workspace">
+    <aside class="books-panel">
+      <p class="eyebrow">Your books</p>
+      <nav id="book-list" aria-label="Books"></nav>
+      <form id="book-form" class="new-book">
+        <input id="new-book-title" placeholder="New book title" aria-label="New book title">
+        <button aria-label="Add book">+</button>
+      </form>
+    </aside>
+    <section class="plot-area">
+      <div class="mobile-book"><label for="book-select">Book</label><select id="book-select"></select></div>
+      <div class="heading"><div><p class="eyebrow">Plot sequence</p><h1 id="book-title"></h1><p>Drag the handle to rearrange your story.</p></div><button id="add-plot" class="primary">+ Add plot point</button></div>
+      <div class="toolbar">
+        <div><button id="open-all">Open all</button><button id="close-all">Close all</button></div>
+        <div><button id="export">Export backup</button><button id="import">Import backup</button><input id="import-file" type="file" accept="application/json,.json" hidden></div>
+        <div class="handle-choice"><span>Handle</span><button id="handle-left">Left</button><button id="handle-right">Right</button></div>
+      </div>
+      <p id="message" class="message" role="status"></p>
+      <div id="plot-list" class="plot-list"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
