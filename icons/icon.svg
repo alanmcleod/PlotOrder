@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#ead9bd"/></linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d77b4c"/><stop offset="1" stop-color="#9f432d"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#paper)"/>
+  <rect x="92" y="92" width="328" height="328" rx="52" fill="#fffdf8" stroke="#b86a48" stroke-width="16"/>
+  <rect x="130" y="142" width="252" height="58" rx="20" fill="#f4d4be"/><rect x="130" y="226" width="252" height="58" rx="20" fill="#e9b792"/><rect x="130" y="310" width="252" height="58" rx="20" fill="#d98358"/>
+  <circle cx="165" cy="171" r="11" fill="#9f432d"/><circle cx="165" cy="255" r="11" fill="#9f432d"/>
+  <path d="M328 88c42 30 52 84 28 128-25 45-74 71-118 97 12-33 30-67 58-91-25 12-47 29-65 50 12-55 43-128 97-184Z" fill="url(#warm)" stroke="#703323" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M221 331c30-82 71-144 121-207" fill="none" stroke="#703323" stroke-width="10" stroke-linecap="round"/>
+</svg>
