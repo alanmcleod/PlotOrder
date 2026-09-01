@@ -17,6 +17,8 @@ GitHub will show the public address when publishing is complete.
 
 The app saves automatically in the current browser. Use **Export backup** to move or safeguard the data, and **Import backup** to restore it.
 
+On a phone, use **+ New** beside the book selector to add a book. Use **Rename book** above the plot list to change the current book's title.
+
 ## Files
 
 - `index.html` — page structure

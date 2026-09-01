@@ -10,6 +10,11 @@
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .heading-actions{display:flex;align-items:center;gap:8px}
+    .heading-actions>button:first-child,.mobile-book button{border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);padding:11px 12px;font:12px Arial,sans-serif;white-space:nowrap}
+    @media(max-width:760px){.heading-actions{flex-direction:column-reverse;align-items:stretch;gap:6px}.heading-actions>button{padding:9px 10px!important}.mobile-book button{padding:11px 10px}}
+  </style>
 </head>
 <body>
   <header class="topbar">
@@ -27,8 +32,8 @@
       </form>
     </aside>
     <section class="plot-area">
-      <div class="mobile-book"><label for="book-select">Book</label><select id="book-select"></select></div>
-      <div class="heading"><div><p class="eyebrow">Plot sequence</p><h1 id="book-title"></h1><p>Drag the handle to rearrange your story.</p></div><button id="add-plot" class="primary">+ Add plot point</button></div>
+      <div class="mobile-book"><label for="book-select">Book</label><select id="book-select"></select><button id="mobile-new-book">+ New</button></div>
+      <div class="heading"><div><p class="eyebrow">Plot sequence</p><h1 id="book-title"></h1><p>Drag the handle to rearrange your story.</p></div><div class="heading-actions"><button id="rename-book">Rename book</button><button id="add-plot" class="primary">+ Add plot point</button></div></div>
       <div class="toolbar">
         <div><button id="open-all">Open all</button><button id="close-all">Close all</button></div>
         <div><button id="export">Export backup</button><button id="import">Import backup</button><input id="import-file" type="file" accept="application/json,.json" hidden></div>
