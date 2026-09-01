@@ -19,6 +19,8 @@ The app saves automatically in the current browser. Use **Export backup** to mov
 
 On a phone, use **+ New** beside the book selector to add a book. Use **Rename book** above the plot list to change the current book's title.
 
+Deleting a plot point is deliberately placed at the bottom of its expanded notes and requires confirmation, reducing accidental deletion.
+
 ## Files
 
 - `index.html` — page structure
